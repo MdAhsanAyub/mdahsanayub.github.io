@@ -20,141 +20,66 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/Chart.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements
     and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-    <style>
-        body {
-            margin: auto;
-            font-family: "Roboto", sans-serif;
-        }
-
-        .topnav {
-            overflow: hidden;
-        }
-
-        .topnav a {
-            float: left;
-            display: block;
-            color: #f6f6f6;
-            text-align: center;
-            padding: 28px 10px;
-            text-decoration: inherit;
-            font-size: 14px;
-            font-family: "Roboto", sans-serif;
-        }
-
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .active {
-            background-color: #4CAF50;
-            color: none;
-        }
-
-        .topnav .icon {
-            display: none;
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) {display: none;}
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav.responsive {position: relative;}
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-    </style>
 </head>
 <body data-spy="scroll" data-offset="0" data-target="#nav">
 <div id="section-topbar">
     <div id="topbar-inner">
         <div class="container">
             <div class="row">
-                <!--<div class="dropdown">-->
-                    <!--<ul id="nav" class="nav">-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#education" title="Resume">&lt;!&ndash;<i class="icon-file"></i>&ndash;&gt;-->
-                                <!--Education</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#work_experience" title="Work Experience">-->
-                                <!--&lt;!&ndash;<i class="icon-briefcase"></i>&ndash;&gt; Work Experience</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#publications" title="Publications">-->
-                                <!--&lt;!&ndash;<i class="icon-envelope"></i>&ndash;&gt;Publication</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#research_work" title="Research Work">-->
-                                <!--&lt;!&ndash;<i class="icon-briefcase"></i>&ndash;&gt; Research Work</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#technical_report" title="Technical Report">-->
-                                <!--&lt;!&ndash;<i class="icon-envelope"></i>&ndash;&gt;Technical Report</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#projects" title="Projects">-->
-                                <!--&lt;!&ndash;<i class="icon-envelope"></i>&ndash;&gt;Projects</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#leadership_activities" title="Leadership Activities">-->
-                                <!--&lt;!&ndash;<i class="icon-envelope"></i>&ndash;&gt;Leadership Activities</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#skills" title="Skills">-->
-                                <!--&lt;!&ndash;<i class="icon-briefcase"></i>&ndash;&gt; Skills</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#achievements" title="Achievements">&lt;!&ndash;<i class="icon-briefcase"></i>&ndash;&gt;-->
-                                <!--Achievements</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#certification" title="Certification">-->
-                                <!--&lt;!&ndash;<i class="icon-envelope"></i>&ndash;&gt;Certification</a>-->
-                        <!--</li>-->
-                        <!--<li class="menu-item">-->
-                            <!--<a class="smoothScroll" href="#workshops" title="Workshops">-->
-                                <!--&lt;!&ndash;<i class="icon-envelope"></i>&ndash;&gt;Workshops</a>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                    <!--&lt;!&ndash;/ uL#nav &ndash;&gt;-->
-                <!--</div>-->
-                <div class="topnav" id="myTopnav">
-                    <a href="#headerwrap">About</a>
-                    <a href="#education">Education</a>
-                    <a href="#work_experience">Work Experience</a>
-                    <a href="#publications">Publications</a>
-                    <a href="#research_work">Research Work</a>
-                    <a href="#technical_report">Technical Report</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#leadership_activities">Leadership Activities</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#achievements">Achievements</a>
-                    <a href="#certification">Certification</a>
-                    <a href="#workshops">Workshops</a>
-                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                <div class="dropdown">
+                    <ul id="nav" class="nav">
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#education" title="Resume"><!--<i class="icon-file"></i>-->
+                                Education</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#work_experience" title="Work Experience">
+                                <!--<i class="icon-briefcase"></i>--> Work Experience</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#publications" title="Publications">
+                                <!--<i class="icon-envelope"></i>-->Publication</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#research_work" title="Research Work">
+                                <!--<i class="icon-briefcase"></i>--> Research Work</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#technical_report" title="Technical Report">
+                                <!--<i class="icon-envelope"></i>-->Technical Report</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#projects" title="Projects">
+                                <!--<i class="icon-envelope"></i>-->Projects</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#leadership_activities" title="Leadership Activities">
+                                <!--<i class="icon-envelope"></i>-->Leadership Activities</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#skills" title="Skills">
+                                <!--<i class="icon-briefcase"></i>--> Skills</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#achievements" title="Achievements"><!--<i class="icon-briefcase"></i>-->
+                                Achievements</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#certification" title="Certification">
+                                <!--<i class="icon-envelope"></i>-->Certification</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="smoothScroll" href="#workshops" title="Workshops">
+                                <!--<i class="icon-envelope"></i>-->Workshops</a>
+                        </li>
+                    </ul>
+                    <!--/ uL#nav -->
                 </div>
                 <!-- /.dropdown -->
                 <div class="clear"></div>
@@ -195,31 +120,29 @@
         <!--/ #education -->
         <section id="education" name="education"></section>
         <div class="container desc">
-            <div class="">
-                <div class="col-lg-11">
-                    <div class="col-lg-2 col-lg-offset-1">
-                        <h4><strong>Education</strong></h4>
-                    </div>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5><strong>EDUCATION</strong></h5>
+                </div>
+                <font color="#34495e">
                     <div class="col-lg-6">
                         <p>
-                            BSc in Computer Science & Engineering
-                            <br><a href="http://www.aiub.edu" target="_blank">American International University-Bangladesh(AIUB)</a>
-                        </p>
-                        <p>
-                            <more>Thesis: “Exhaustive Study of Essential CSP Techniques based on N-Queens Problem and Resource
-                                Leveling Problem Implementation Approach & Prototyping ” – Supervisor: Dr. Kazi A Kalpoma
-                            </more>
+                            <t>BSc in Computer Science & Engineering</t>
+                            <br>American International University-Bangladesh(AIUB)
+                            <br>Thesis: “Exhaustive Study of Essential CSP Techniques based on N-Queens Problem and Resource
+                            Leveling Problem Implementation Approach & Prototyping ” – Supervisor: Dr. Kazi A Kalpoma
                         </p>
                         <hr>
                     </div>
                     <div class="col-lg-3">
                         <p>
-                            <span>February, 2017</span>&nbsp;
+                            <span style="font-size: 12px;">December, 2016</span>&nbsp;
+                            <br>
+                            <br>
                         </p>
                     </div>
-                </div>
+                </font>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -228,15 +151,14 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Work Experience</strong></h4>
+                    <h5><strong>Work Experience</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>
-                        Project Manager
-                        <br><more><a href="http://appinionbd.com" target="_blank">Appinion BD Limited</a></more>
-                    </p>
-                    <p>
-                        <strong><u>Responsibilities:</u></strong>
+                        <font color="#34495e">
+                            <t>Project Manager</t>
+                            <br><a href="http://appinionbd.com" target="_blank">Appinion BD Limited</a>
+                            <br><strong><u>Responsibilities:</u></strong>
                             <ul>
                                 <li>
                                     Plan, design and architect software development from the scratch while
@@ -269,69 +191,67 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>February, 2017-Ongoing</span>&nbsp;
+                        <span style="font-size: 12px;">February, 2017-Ongoing</span>&nbsp;
                     </p>
                 </div>
-                <hr>
                 <div class="col-lg-6 col-lg-offset-3">
                     <p>
-                        Computer Science Teacher (Part Time)
-                        <br><a href="http://primebankenglishmediumschool.org/" target="_blank">Prime Bank English Medium
-                        School (Uttara Branch, Dhaka)</a>
-                    </p>
-                    <p>
-                        <strong><u>Responsibilities:</u></strong>
-                    <ul>
-                        <li>
-                            Conduct classes, prepare notes and outlining curriculum for class VIII
-                            and class IX (O-level) standard students.
-                        </li>
-                        <li>
-                            Lecture notes are comprised of fundamentals of computer science,
-                            computer architecture, Algorithms, flowcharts, number systems, etc.
-                        </li>
-                    </ul>
+                        <font color="#34495e">
+                            <t>Computer Science Teacher (Part Time)</t>
+                            <br><a href="http://primebankenglishmediumschool.org/" target="_blank">Prime Bank English Medium School (Uttara Branch, Dhaka)</a>
+                            <br><strong><u>Responsibilities:</u></strong>
+                            <ul>
+                                <li>
+                                    Conduct classes, prepare notes and outlining curriculum for class VIII
+                                    and class IX (O-level) standard students.
+                                </li>
+                                <li>
+                                    Lecture notes  are  comprised  of fundamentals of  computer science,
+                                    computer architecture, Algorithms, flowcharts, number systems, etc.
+                                </li>
+                            </ul>
                     </p>
                     <hr>
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>March, 2017-Ongoing</span>&nbsp;
-
+                        <span style="font-size: 12px;">March, 2017-Ongoing</span>&nbsp;
+                        <br>
+                        <br>
                     </p>
                 </div>
-                <hr>
                 <div class="col-lg-6 col-lg-offset-3">
                     <p>
-                        Web Developer (Full Time)
-                        <br>GoRiseMe, Inc.
+                        <font color="#34495e">
+                            <t>Web Developer (Full Time)</t>
+                            <br><a href="#">GoRiseMe, Inc.</a>
+                            <br><strong><u>Responsibilities:</u></strong>
+                            <ul>
+                                <li>
+                                    Integrate and develop back-end and database driven features using PHP
+                                    in Codeigniter (CI) framework.
+                                </li>
+                                <li>
+                                    Handle encryption mechanism, file upload/ download security and
+                                    apply HCI approaches to UX while creating responsible UI.
+                                </li>
+                                <li>
+                                    Engage web visitors to B2B and CSR campaign via email and setting
+                                    logical flow of actions for smooth web surfing experience.
+                                </li>
+                            </ul>
                     </p>
-                    <p>
-                        <strong><u>Responsibilities:</u></strong>
-                    <ul>
-                        <li>
-                            Integrate and develop back-end and database driven features using PHP
-                            in Codeigniter (CI) framework.
-                        </li>
-                        <li>
-                            Handle encryption mechanism, file upload/ download security and
-                            apply HCI approaches to UX while creating responsible UI.
-                        </li>
-                        <li>
-                            Engage web visitors to B2B and CSR campaign via email and setting
-                            logical flow of actions for smooth web surfing experience.
-                        </li>
-                    </ul>
-                    </p>
+                    <hr>
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>October, 2016-January, 2017</span>&nbsp;
+                        <span style="font-size: 12px;">October, 2016-January, 2017</span>&nbsp;
 
                     </p>
                 </div>
+
+                </font>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -340,7 +260,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Publication</strong></h4>
+                    <h5><strong>Publication</strong></h5>
                 </div>
 
                 <div class="col-lg-6">
@@ -365,9 +285,9 @@
                     </p>
                     <!--<img class="img-responsive" src="assets/img/port01.jpg" alt="">-->
                     </p>
+                    <hr>
                 </div>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -375,18 +295,16 @@
         <section id="research_work" name="research_work"></section>
 
         <div class="container desc">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Research Work</strong></h4>
-                </div>
-                <div class="col-lg-6">
-                    <p>CGPA Prediction using Different Machine Learning Algorithms</p>
-                    <p><more>Different types of proposed algorithms of Machine Learning have been applied in our real dataset of a
-                        number of AIUB CS students. Our goal is to discover an understanding at an early stage of a student’s
-                        academic career with some certain grade points that will help him/her visualize what will occur in future.</more></p>
-                </div>
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5><strong>Research Work</strong></h5>
             </div>
-            <hr>
+            <div class="col-lg-6">
+                <p>CGPA Prediction using Different Machine Learning Algorithms</p>
+                <p><more>Different types of proposed algorithms of Machine Learning have been applied in our real dataset of a
+                    number of AIUB CS students. Our goal is to discover an understanding at an early stage of a student’s
+                    academic career with some certain grade points that will help him/her visualize what will occur in future.</more></p>
+                <hr>
+            </div>
         </div>
         <!--/.container -->
 
@@ -395,7 +313,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Technical Report</strong></h4>
+                    <h5><strong>Technical Report</strong></h5>
                 </div>
 
                 <div class="col-lg-6">
@@ -417,9 +335,9 @@
                             Bangladesh Limited and Southtech Limited, Bangladesh.
                         </more>
                     </p>
+                    <hr>
                 </div>
             </div>
-            <hr>
             <!--/.row -->
 
         </div>
@@ -430,7 +348,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Projects</strong></h4>
+                    <h5><strong>Projects</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>Exhaustive Study of Essential CSP Techniques based on N-Queens Problem and Resource Leveling Problem Implementation Approach & Prototyping</p>
@@ -491,12 +409,12 @@
                             of the site.
                         </more>
                     </p>
+                    <hr>
                 </div>
                 <div class="col-lg-3">
                     <p></p>
                 </div>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -505,7 +423,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Leadership Activities</strong></h4>
+                    <h5><strong>Leadership Activities</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>Executive Member in Public Relations</p>
@@ -515,10 +433,10 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>October, 2014 – September, 2014 </span>&nbsp;
+                        <span style="font-size: 12px;">October, 2014 – September, 2014 </span>&nbsp;
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-lg-offset-3">
                     <p>Hosting (Seminar, Workshop & Ceremony)</p>
                     <p>
                         <more>AIUB Computer Club (ACC) & FSIT, AIUB</more>
@@ -526,7 +444,7 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>June, 2014 – January, 2015 </span>&nbsp;
+                        <span style="font-size: 12px;">June, 2014 – January, 2015 </span>&nbsp;
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
@@ -534,16 +452,21 @@
                     <p>
                         <more>AIUB Computer Club (ACC) & FSIT, AIUB</more>
                     </p>
+                    <hr>
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>June, 2014 – January, 2016 </span>&nbsp;
+                        <span style="font-size: 12px;">June, 2014 – January, 2016 </span>&nbsp;
+                        <br>
+                        <br>
                     </p>
                 </div>
-                <hr>
+                </font>
             </div>
-            <hr>
         </div>
+        </font>
+        </font>
+        </font>
         <!--/.container -->
 
         <!-- Skills -->
@@ -551,10 +474,11 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Skills</strong></h4>
+                    <h5><strong>Skills</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>
+                        <font color="#34495e">
                             Skilled in multiple programming languages: • C • C++ • JAVA • PHP • Python
                             <br>
                             Database: • MySQL • SQL
@@ -567,13 +491,17 @@
                             Microsoft Visio and User Interface design in Adobe XD  • Adobe Photoshop • Adobe Illustrator<br>
                             • Proficient in MS Office • Useful commands in LINUX OS: Ubuntu & Linux Mint
                     </p>
+                    <hr>
                 </div>
                 <div class="col-lg-3">
                     <p>
+                        <!--<span style="font-size: 12px;">February, 2017</span>&nbsp;
+                        <br>
+                        <br>-->
                     </p>
                 </div>
+                </font>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -582,7 +510,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Achievements</strong></h4>
+                    <h5><strong>Achievements</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>Traveled Chennai and Bangalore, India to Assess Microfinance Environment of IFMR Rural Finance.</p>
@@ -621,14 +549,16 @@
                     <p>
                         <more>Awarded 35% student scholarship upon tuition fees after Written Exam (2013), American International University-Bangladesh (AIUB).</more>
                     </p>
+                    <hr>
                 </div>
                 <div class="col-lg-3">
                     <p>
 
                     </p>
                 </div>
+
+                </font>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -637,7 +567,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Certification</strong></h4>
+                    <h5><strong>Certification</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>Machine Learning A-Z™: Hands-On Python & R in Data Science.</p>
@@ -647,10 +577,11 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>Status: Enrolled</span>&nbsp;
+                        <span style="font-size: 12px;">Status: Enrolled</span>&nbsp;
+                        <br>
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-lg-offset-3">
                     <p>Learning Python for Data Analysis and Visualization.</p>
                     <p>
                         <more>Udemy, Inc. (Online Certified Course).</more>
@@ -658,7 +589,8 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>Status: Enrolled</span>&nbsp;
+                        <span style="font-size: 12px;">Status: Enrolled</span>&nbsp;
+                        <br>
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
@@ -669,7 +601,8 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>Status: Completed</span>&nbsp;
+                        <span style="font-size: 12px;">Status: Completed</span>&nbsp;
+                        <br>
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
@@ -677,14 +610,17 @@
                     <p>
                         <more>Cisco.</more>
                     </p>
+                    <hr>
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>Status: Completed</span>&nbsp;
+                        <span style="font-size: 12px;">Status: Completed</span>&nbsp;
+                        <br>
                     </p>
                 </div>
+
+                </font>
             </div>
-            <hr>
         </div>
         <!--/.container -->
 
@@ -693,7 +629,7 @@
         <div class="container desc">
             <div class="row">
                 <div class="col-lg-2 col-lg-offset-1">
-                    <h4><strong>Workshops</strong></h4>
+                    <h5><strong>Workshops</strong></h5>
                 </div>
                 <div class="col-lg-6">
                     <p>AIUB a2i Prototyping Workshop</p>
@@ -704,7 +640,7 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>October  05, 2017</span>&nbsp;
+                        <span style="font-size: 12px;font-family: "Roboto", sans-serif">October  05, 2017</span>&nbsp;
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
@@ -716,7 +652,9 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>April 09, 2017 </span>&nbsp;
+                        <span style="font-size: 12px;">April 09, 2017 </span>&nbsp;
+                        <br>
+                        <br>
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
@@ -727,7 +665,9 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>September 21, 2015 </span>&nbsp;
+                        <span style="font-size: 12px;">September 21, 2015 </span>&nbsp;
+                        <br>
+                        <br>
                     </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
@@ -738,18 +678,22 @@
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>March 22, 2015</span>&nbsp;
-                    </p>
+                        <span style="font-size: 12px;">March 22, 2015</span>&nbsp;
+                  </p>
                 </div>
                 <div class="col-lg-6 col-lg-offset-3">
                     <p>Seminar on Microsoft Dynamics</p>
-                    <p><more>Conducted by Naviworld Bangladesh (Software Firm, Dhaka) at AIUB.</more></p>
+                    <p><more>Conducted by Naviworld Bangladesh (Software Firm, Dhaka) at AIUB.</more>
+                    </p>
                 </div>
                 <div class="col-lg-3">
                     <p>
-                        <span>March 20, 2015</span>&nbsp;
+                        <span style="font-size: 12px;">March 20, 2015</span>&nbsp;
+                        <br>
+                        <br>
                     </p>
                 </div>
+                </font>
             </div>
         </div>
         <!--/.container -->
@@ -773,16 +717,7 @@
 
     </b>
 </b>
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
+
 
 </body>
 </html>
